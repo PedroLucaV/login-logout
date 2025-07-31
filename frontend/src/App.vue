@@ -1,7 +1,15 @@
-<script setup></script>
+<script setup>
+import router from './router';
+
+const route = router.currentRoute.value;
+console.log(route);
+</script>
 
 <template>
-  <h1>Hello World</h1>
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
