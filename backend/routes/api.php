@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('/user')->group(function() {
-    Route::post('/registar', [UserController::class, 'store']);
+    Route::post('/registrar', [UserController::class, 'store']);
 });
 
 Route::prefix('/auth')->group(function() {
