@@ -53,6 +53,59 @@ This is a simple project designed to **practice and demonstrate API integration 
    php artisan serve
 ```
 
+### 🔐 API Routes
+
+#### 📌 Register User
+Creates a New User in Application
+
+```http
+POST http://127.0.0.1:8000/api/user/registrar
+Content-Type: application/json
+
+{
+  "name": "Nome do Usuário",
+  "email": "email@exemplo.com",
+  "password": "senha"
+}
+```
+
+---
+
+#### 🔑 Login
+Logs in the user and returns an authentication token.
+
+```http
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "email@exemplo.com",
+  "password": "senha"
+}
+```
+
+---
+
+#### 🔓 Logout
+Revoke and delete the current logged user token
+
+```http
+POST http://127.0.0.1:8000/api/auth/logout
+Authorization: Bearer YOUR_TOKEN_HERE
+```
+
+---
+
+#### 👤 Logged User Data
+Return the data from the logged user
+
+```http
+GET http://127.0.0.1:8000/api/auth/me
+Authorization: Bearer YOUR_TOKEN_HERE
+```
+
+---
+
 ### Frontend (Vue.js)
 
 1. Navigate to the `frontend` directory:
