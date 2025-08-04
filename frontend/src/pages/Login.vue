@@ -12,6 +12,6 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const handleSuccess = () => {
-  router.push('/')
+  router.push('/user')
 }
 </script>

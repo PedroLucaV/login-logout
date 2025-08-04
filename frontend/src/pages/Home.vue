@@ -1,22 +1,13 @@
-<script setup></script>
+<script setup>
+import Navbar from '@/components/Navbar.vue'
+</script>
 
 <template>
   <main>
-
+  <Navbar />
   </main>
 </template>
 
 <style scoped>
-header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
+
 </style>
