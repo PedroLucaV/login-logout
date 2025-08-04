@@ -3,7 +3,7 @@ import api from '@/services/api'
 export default {
   async login(credentials) {
     const response = await api.post('/auth/login', credentials)
-    localStorage.setItem('token', response.token);
+    localStorage.setItem('token', response.data.token);
   },
   logout() {
     localStorage.removeItem('token')
